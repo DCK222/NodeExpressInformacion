@@ -1,0 +1,53 @@
+#contenidomain {
+    width: 100%;
+    height: 90vh;
+    
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de la fila (row) a columna (column) para dispositivos pequeños */
+    justify-content: center;
+}
+
+#contbotones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#node,
+#Express {
+    background-color: blue;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ventananode,
+#ventanexpress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 90%; /* Utiliza un porcentaje para el ancho */
+    max-width: 1000px; /* Establece un ancho máximo */
+    height: 60vh; /* Utiliza un porcentaje para la altura */
+}
+
+/* Agrega una media query para dispositivos más pequeños */
+@media (max-width: 600px) {
+    #ventananode,
+    #ventanexpress {
+        width: 90%;
+        height: 80vh;
+    }
+}
