@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    background: linear-gradient(to right, #97c8ff, #5f97ff);
+    background-size: 200% 100%;
+    animation: movimientoDegradado 10s ease-in-out infinite;
+  }
+  
+  @keyframes movimientoDegradado {
+    0%, 100% {
+      background-position: 100% 0;
+    }
+    50% {
+      background-position: 0 0;
+    }
+  }
+

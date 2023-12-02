@@ -1,3 +1,4 @@
+
 #contenidomain {
     width: 100%;
     height: 90vh;
@@ -5,7 +6,9 @@
     display: flex;
     flex-direction: column; /* Cambia la dirección de la fila (row) a columna (column) para dispositivos pequeños */
     justify-content: center;
+    
 }
+
 
 #contbotones {
     display: flex;
@@ -17,15 +20,16 @@
 
 #node,
 #Express {
-    background-color: blue;
+    
     width: 100%;
     max-width: 200px;
     height: 200px;
-    margin: 10px;
+    margin: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 #ventananode,
@@ -34,13 +38,17 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: 90%; /* Utiliza un porcentaje para el ancho */
-    max-width: 1000px; /* Establece un ancho máximo */
-    height: 60vh; /* Utiliza un porcentaje para la altura */
+    width: 130%; /* Utiliza un porcentaje para el ancho */
+    max-width: 1300px; /* Establece un ancho máximo */
+    height: 80vh; /* Utiliza un porcentaje para la altura */
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 30px;
+    transition: opacity 0.9s ease-in-out;
 }
 
 /* Agrega una media query para dispositivos más pequeños */
@@ -50,4 +58,75 @@
         width: 90%;
         height: 80vh;
     }
+}
+
+
+#ventananode.show,
+#ventanexpress.show {
+  opacity: 1;
+}
+
+#ventananode.hide,
+#ventanexpress.hide {
+  opacity: 0;
+}
+#textoinicio{
+    padding-left: 5%;
+    
+}
+#titulo{
+text-decoration: underline;
+margin-bottom: 5px;
+
+}
+#parrafo{
+    font-size: 25px;
+}
+
+
+
+
+#botonmas{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all ease .55s;
+}
+#felchaabajo{
+    width: 40px;
+    animation: mover 2s infinite alternate; 
+    transition: all ease .55s; 
+}
+#botonbota{
+background-color: rgba(240, 248, 255, 0);
+border: 0 solid;
+
+}
+
+@keyframes mover {
+    0% { top: 100px; }
+    100% { top: 200px; }
+}
+#AbrirNode{
+    background-color: rgba(250, 235, 215, 0);
+    border: 0 solid;
+    transition: all ease .55s;
+    
+}
+#AbrirExpress{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0 solid;
+    transition: all ease .55s;
+    
+}
+
+#Express:hover button{
+    transform: scale(1.2);
+}
+#node:hover button{
+    transform: scale(1.2);
+}
+#botonmas:hover button{
+    transform: scale(1.2);
 }

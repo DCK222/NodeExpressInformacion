@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    margin-top: 70px; /* Ajusta este valor según la altura de tu encabezado */
 }
 
 header {
@@ -14,8 +15,8 @@ header {
 
 nav {
     display: flex;
-   
     padding: 10px;
+    
 }
 
 nav a {
@@ -23,4 +24,15 @@ nav a {
     text-decoration: none;
     margin: 10px 20px;
     font-weight: bold;
+    
+}
+#AbrirNode{
+    background-color: #33333300;
+    border: 2px solid rgba(255, 204, 0, 0);
+    border-radius: 10px;
+}
+#AbrirExpress{
+    background-color: #33333300;    
+    border: 2px solid rgba(255, 204, 0, 0);
+    border-radius: 10px;
 }
