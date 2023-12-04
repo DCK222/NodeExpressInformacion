@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-y: auto;
     font-family: 'Arial', sans-serif;
     color: #000000;
+    
     background: linear-gradient(to right, #ffffff, #cad6ec);
     /* background-color: azure; */
     background-size: 200% 100%;
